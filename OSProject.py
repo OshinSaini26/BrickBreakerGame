@@ -97,13 +97,13 @@ def update():
 
     # Check if the player has won
     if len(bricks) == 0:
-        canvas.create_text(WIDTH // 2, HEIGHT // 2, text="Winner Winner,Chicken DINNER!", font=("Helvetica", 24), fill="white")
+        canvas.create_text(WIDTH // 2, HEIGHT // 2, text="Game Won", font=("Helvetica", 24), fill="white")
         root.update()
         return
 
     # Check if the player has lost
     if ball_coords[3] >= HEIGHT:
-        canvas.create_text(WIDTH // 2, HEIGHT // 2, text="CHAL NIKAL!\n tere bas ki nhi!!!!", font=("Helvetica", 24), fill="white")
+        canvas.create_text(WIDTH // 2, HEIGHT // 2, text="Game Over", font=("Helvetica", 24), fill="white")
         root.update()
         return
 
